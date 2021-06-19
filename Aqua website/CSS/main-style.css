@@ -51,6 +51,11 @@ nav {
 
 .drop-button {
     background-color: rgba(0, 0, 0, 0);
+    transition: 0.5s;
+}
+
+.drop-button:hover {
+    background-color: #000000cd;
 }
 
 .dropdown-content {
@@ -73,6 +78,7 @@ nav {
     text-align: left;
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
+    transition: 0.5s;
 }
 
 .show {
