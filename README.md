@@ -1,6 +1,6 @@
-<img src="" width="200">
+<img src="https://cdn.discordapp.com/attachments/856937460567113728/856951422330601472/red_pandas_logo-removebg-preview_1.png" width="300">
 
-## Hello, we are The Red Pandas!
+## Greetings, we are The Red Pandas!
 
 
 [introduction text]
@@ -9,16 +9,16 @@
 ---
  
 
-## <img src="" width="40">  Installation 
+## <img src="https://cdn.discordapp.com/attachments/856937460567113728/856950114278309908/unknown-removebg-preview_1.png" width="150">  Download 
 
 Download the app from [github](https://github.com/KVNeykov18/Project-Aqua-for-28-06-2021-) by pressing the green clone button. 
 
 ---
 
-## <img src="" width="40">Team members and roles
+## <img src="https://cdn.discordapp.com/attachments/856937460567113728/856950114278309908/unknown-removebg-preview_1.png" width="150">The members of the squad
 - Kristian Neykov - Scrum Trainer
 - Georgi Mihov - Developer Back-End
-- Radoslav Lisicov - Developer Back-End
+- Radoslav Lisitsov - Developer Back-End
 - Stepan Urivko - Developer Front-End
 - Simeon Boev - Developer Front-End
 - Maria Kostova - Quality engineer
@@ -26,7 +26,7 @@ Download the app from [github](https://github.com/KVNeykov18/Project-Aqua-for-28
 
 ---
 
-## <img src="" width="40"> Used technologies
+## <img src="https://cdn.discordapp.com/attachments/856937460567113728/856950114278309908/unknown-removebg-preview_1.png" width="150"> Technologies used
 - <img src="https://media.discordapp.net/attachments/815253581149896790/818134527842582578/Visual_Studio_Icon_2019.svg.png?width=541&height=541" width="20"> Visual studio
 - <img src="https://media.discordapp.net/attachments/815253581149896790/818134368848969728/1043px-Microsoft_Excel_2013_logo.svg_.png?width=551&height=541" width="20"> Excel
 -  <img src="https://media.discordapp.net/attachments/815253581149896790/818133539903111188/Microsoft_Word_logo.png" width="20"> Word
