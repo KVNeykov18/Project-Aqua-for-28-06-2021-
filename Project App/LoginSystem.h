@@ -50,7 +50,7 @@ public:
 	//Save user to file
 	bool saveUser();
 	//Load user from file
-	bool loadUsers();
+	bool loadUser(std::string username);
 private:
 	std::string username;
 	std::string displayName;

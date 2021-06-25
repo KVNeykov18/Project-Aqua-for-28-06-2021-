@@ -140,10 +140,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="LoginSystem.cpp" />
+    <ClCompile Include="LogSystem.cpp" />
     <ClCompile Include="Menus.cpp" />
     <ClCompile Include="Project App.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="LogSystem.h" />
     <ClInclude Include="LoginSystem.h" />
     <ClInclude Include="Menus.h" />
   </ItemGroup>

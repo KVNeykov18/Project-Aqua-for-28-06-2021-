@@ -97,7 +97,7 @@ bool User::saveUser()
 {
 	if (isTempUser())
 	{
-		std::cout << "This is a temporary user, are you sure you want to change the user to a permanent one? Y/N\n:";
+		std::cout << "This is a temporary user, are you sure you want to change the user to a permanent one? Y/N\n";
 		switch (_getch())
 		{
 		case 'y':
@@ -105,7 +105,7 @@ bool User::saveUser()
 			setTempUser(false); saveUser(); return true;
 		case 'n':
 		case 'N':
-			std::cout << "\nUser not saved.\nReturning to main menu..."; Sleep(1000);
+			std::cout << "User not saved.\nReturning to main menu..."; Sleep(1000);
 			return true;
 		default:
 			return false;
@@ -115,7 +115,7 @@ bool User::saveUser()
 	else
 	{
 		std::ofstream file;
-		file.open(".\\file.txt");
+		file.open("..\\Users\\"+username+".txt",std::ios::trunc);
 
 		if (file.is_open())
 		{
@@ -127,14 +127,52 @@ bool User::saveUser()
 			file << isAdmin() << "\n";
 			file << isModerator() << "\n";
 			file.close();
-			std::cout << "\nUser successfully saved.\nReturning to main menu..."; Sleep(1000); return true;
+			std::cout << "User successfully saved.\nReturning to main menu..."; Sleep(1000); return true;
 		}
 		std::cout << "\nAn error occured\nReturning to main menu..."; Sleep(1000);
 		return false;
 	}
 }
 
-bool User::loadUsers()
+bool User::loadUser(std::string username)
 {
+	std::ifstream file;
+	file.open("..\\Users\\" + username + ".txt");
+	if (file.is_open())
+	{
+		std::string temp;
+		int i = 0;
+		while (getline(file,temp))
+		{
+			switch (i)
+			{
+			case 0:
+				this->username = temp;
+				break;
+			case 1:
+				displayName = temp;
+				break;
+			case 2:
+				password = temp;
+				break;
+			case 3:
+				userEmail = temp;
+				break;
+			case 4:
+				temporaryUser = stoi(temp);
+				break;
+			case 5:
+				admin = stoi(temp);
+				break;
+			case 6:
+				moderator = stoi(temp);
+				break;
+			default:
+				break;
+			}
+			i++;
+		}
+		return true;
+	}
 	return false;
 }
