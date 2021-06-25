@@ -9,8 +9,8 @@ public:
 	Menus();
 
 	void printMainMenu();
-	void printUserCreationMenu();
-	void printUserEditingMenu();
+	void printUserManagementOptions();
+	void printWaterBodyManagementOptions();
 private:
 	std::string mainMenu;
 	std::string userCreationMenu;
