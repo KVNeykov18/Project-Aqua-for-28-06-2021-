@@ -1,8 +1,10 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <fstream>
 #include <conio.h>
 #include <windows.h>
+
 class User
 {
 public:

@@ -114,8 +114,23 @@ bool User::saveUser()
 	}
 	else
 	{
-		std::cout << "\nUser successfully saved.\nReturning to main menu..."; Sleep(1000);
-		return true;
+		std::ofstream file;
+		file.open(".\\file.txt");
+
+		if (file.is_open())
+		{
+			file << username << "\n";
+			file << displayName << "\n";
+			file << password << "\n";
+			file << userEmail << "\n";
+			file << isTempUser() << "\n";
+			file << isAdmin() << "\n";
+			file << isModerator() << "\n";
+			file.close();
+			std::cout << "\nUser successfully saved.\nReturning to main menu..."; Sleep(1000); return true;
+		}
+		std::cout << "\nAn error occured\nReturning to main menu..."; Sleep(1000);
+		return false;
 	}
 }
 
