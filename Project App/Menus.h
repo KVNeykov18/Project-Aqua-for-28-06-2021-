@@ -1,7 +1,9 @@
 #pragma once
 #include <iostream>
 #include <string>
-
+#include <conio.h>
+#include <vector>
+#include "LoginSystem.h"
 
 class Menus
 {
@@ -13,7 +15,7 @@ public:
 	void printWaterBodyManagementOptions();
 private:
 	std::string mainMenu;
-	std::string userCreationMenu;
-	std::string userEditingMenu;
+	std::string userManagementMenu;
+	std::string waterBodyManagementMenu;
 
 };

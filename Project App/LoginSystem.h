@@ -3,7 +3,9 @@
 #include <string>
 #include <fstream>
 #include <conio.h>
+#include <vector>
 #include <windows.h>
+#include "Menus.h"
 
 class User
 {

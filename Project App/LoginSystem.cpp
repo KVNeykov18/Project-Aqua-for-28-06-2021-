@@ -95,6 +95,7 @@ bool User::isTempUser()
 
 bool User::saveUser()
 {
+	Menus menu;
 	if (isTempUser())
 	{
 		std::cout << "This is a temporary user, are you sure you want to change the user to a permanent one? Y/N\n";
@@ -105,7 +106,7 @@ bool User::saveUser()
 			setTempUser(false); saveUser(); return true;
 		case 'n':
 		case 'N':
-			std::cout << "User not saved.\nReturning to main menu..."; Sleep(1000);
+			std::cout << "User not saved.\nReturning to main menu..."; Sleep(1000); menu.printMainMenu();
 			return true;
 		default:
 			return false;
@@ -127,9 +128,9 @@ bool User::saveUser()
 			file << isAdmin() << "\n";
 			file << isModerator() << "\n";
 			file.close();
-			std::cout << "User successfully saved.\nReturning to main menu..."; Sleep(1000); return true;
+			std::cout << "User successfully saved.\nReturning to main menu..."; Sleep(1000); menu.printMainMenu(); return true;
 		}
-		std::cout << "\nAn error occured\nReturning to main menu..."; Sleep(1000);
+		std::cout << "\nAn error occured\nReturning to main menu..."; Sleep(1000); menu.printMainMenu();
 		return false;
 	}
 }
@@ -137,6 +138,7 @@ bool User::saveUser()
 bool User::loadUser(std::string username)
 {
 	std::ifstream file;
+
 	file.open("..\\Users\\" + username + ".txt");
 	if (file.is_open())
 	{
