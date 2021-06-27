@@ -15,14 +15,15 @@ void Menus::printMainMenu()
 	if (currentUser.getUsername() == "")
 	{
 		std::cout << "Not Logged In"<< "\n\n";
+		std::cout << "MAIN MENU\n=============\n3. Login\n0. Exit app";
 	}
 	else
 	{
 		std::cout << "Current User: " + currentUser.getDisplayName()<<"\n\n";
+		std::cout << "MAIN MENU\n=============\n1. Show monitoring options\n2. Show user management options\n3. Login\n0. Exit app";
 	}
 	std::string temp;
 	User tempUser;
-	std::cout << mainMenu;
 	switch (_getch())
 	{
 	case '1':
@@ -35,21 +36,22 @@ void Menus::printMainMenu()
 		std::cout << "Enter username: "; std::cin >> temp;
 		if (tempUser.loadUser(temp))
 		{
-			std::cout << "Enter password: ";
-			std::cin >> temp;
-			while (!(tempUser.getPassword() == temp))
-			{
-				system("CLS");
-				std::cout << "Incorrect password";
-				Sleep(1000);
-				std::cout << "Enter password: "; std::cin >> temp;
-			} 
-			currentUser = tempUser;
-		}
-		else
-		{
 			std::cout << "User not found";
+			Sleep(1000);
+			system("CLS");
+			std::cout << "Enter username: "; std::cin >> temp;
 		}
+		std::cout << "Enter password: ";
+		std::cin >> temp;
+		while (!(tempUser.getPassword() == temp))
+		{
+			system("CLS");
+			std::cout << "Incorrect password";
+			Sleep(1000);
+			system("CLS");
+			std::cout << "Enter password: "; std::cin >> temp;
+		}
+		currentUser = tempUser;
 		break;
 	case '0':
 		for (size_t i = 0; i < arr.size(); i++)

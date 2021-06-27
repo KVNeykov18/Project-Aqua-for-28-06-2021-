@@ -33,10 +33,10 @@
       <Filter>Resource Files</Filter>
     </ClInclude>
     <ClInclude Include="Menus.h">
-      <Filter>Resource Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="LogSystem.h">
-      <Filter>Resource Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
