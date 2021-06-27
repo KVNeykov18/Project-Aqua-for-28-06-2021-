@@ -135,12 +135,6 @@ bool User::saveUser()
 	}
 }
 
-bool User::saveUser(User u)
-{
-	u.saveUser();
-	return true;
-}
-
 bool User::loadUser(std::string username)
 {
 	std::ifstream file;

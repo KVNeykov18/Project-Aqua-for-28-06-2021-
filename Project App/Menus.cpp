@@ -34,7 +34,7 @@ void Menus::printMainMenu()
 	case '3':
 		system("CLS");
 		std::cout << "Enter username: "; std::cin >> temp;
-		if (tempUser.loadUser(temp))
+		while (!(tempUser.loadUser(temp)))
 		{
 			std::cout << "User not found";
 			Sleep(1000);
