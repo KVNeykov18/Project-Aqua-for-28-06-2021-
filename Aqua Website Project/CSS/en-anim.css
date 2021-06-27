@@ -1,0 +1,208 @@
+body {
+	background-color: rgb(31, 31, 31);
+}
+
+a {
+	text-decoration: none;
+}
+
+#act-tab {
+	background-image: url("../images/image-4.jpg");
+	background-position: bottom;
+	background-size: 110%;
+	background-repeat: no-repeat;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+
+.gen-inf {
+	overflow: hidden;
+	width: 100%;
+	height: 400px;
+	background-image: url("../images/image-4.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.gen-back {
+	width: 100%;
+	height: 400px;
+}
+
+.gen-title {
+	background-color: rgba(0, 0, 0, 0.802);
+	padding: 30px;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	color: rgb(255, 255, 255);
+	font-size: 45px;
+	text-align: center;
+	position: absolute;
+	color: rgba(255, 255, 255);
+	font-family: 'Playfair Display', serif;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+
+.main-text {
+	position: relative;
+	margin-top: 2vw;
+	height: 100px;
+}
+
+.mtcont-2 {
+	background-color: rgb(31, 31, 31);
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	font-family: 'Quicksand';
+}
+
+.mtcont-2-title {
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	color:rgb(255, 255, 255);
+	top: 15%;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.mtcont-2-text {
+	color:rgb(255, 255, 255);
+	top: 50%;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+
+.textboxes {
+	padding-top: 4vw;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+
+.textboxes .hvrbox {
+	margin-right: 2vw;
+	margin-left: 2vw;
+	font-family: 'Quicksand';
+}
+
+a {
+	text-decoration: none;
+	color: rgba(31, 31, 31, 0)
+}
+
+.hvrbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	width: 300px;
+	height: 300px;
+	border: 1px solid white;
+	transition: 0.8s;
+}
+
+.hvrbox img {
+	width: auto;
+	height: 100%;
+	transition: 0.8s;
+}
+
+.hvrbox .hvrbox-layer_bottom {
+	display: block;
+}
+
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.734);
+	color: #fff;
+	padding: 15px;
+	transition: 0.8s;
+}
+
+.hvrbox:hover .hvrbox-layer_top, .hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+}
+
+.hvrbox:hover {
+	transform: scale(1.1, 1.1);
+	box-shadow: 1px 1px 6px rgb(255, 255, 255);
+	border: none;
+	z-index: 2;
+}
+
+
+
+.hvrbox .hvrbox-text {
+	font-size: 18px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.hvrbox-text  {
+	width: 90%;
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+
+.footer {
+	margin-top: 2vw;
+	width: 100%;
+	height: 60px;
+	position: relative;
+	background-color: rgb(12, 12, 12);
+}
+
+.f-cont a{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Bebas Neue', cursive;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	opacity: 0.6;
+	transition: 0.5s;
+}
+
+.f-cont a:hover {
+	opacity: 1;
+	border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 1100px) {
+	.hvrbox {
+		display: none;
+	}
+}

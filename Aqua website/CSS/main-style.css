@@ -54,7 +54,7 @@ nav {
     transition: 0.5s;
 }
 
-.drop-button:hover {
+.drop-button:hover, .drop-button:focus {
     background-color: #000000cd;
 }
 

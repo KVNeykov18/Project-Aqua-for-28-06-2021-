@@ -1,0 +1,197 @@
+body {
+	background-color: rgb(31, 31, 31);
+}
+
+a {
+	text-decoration: none;
+}
+
+#act-tab {
+	background-image: url("../images/image-5.jpg");
+	background-position: bottom;
+	background-size: 110%;
+	background-repeat: no-repeat;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+
+.gen-inf {
+	overflow: hidden;
+	width: 100%;
+	height: 400px;
+	background-image: url("../images/image-5.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.gen-back {
+	width: 100%;
+	height: 400px;
+}
+
+.gen-title {
+	background-color: rgba(0, 0, 0, 0.802);
+	padding: 30px;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	color: rgb(255, 255, 255);
+	font-size: 45px;
+	text-align: center;
+	position: absolute;
+	color: rgba(255, 255, 255);
+	font-family: 'Playfair Display', serif;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+.main1-inf {
+	margin-top: 2vw;
+	overflow: hidden;
+	width: 100%;
+	height: 500px;
+	background-image: linear-gradient(35deg, rgb(15, 22, 24), rgb(79, 170, 182));	
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;	
+}
+
+.main1-back {
+	background-color: rgba(0, 0, 0, 0.802);
+	width: 100%;
+	height: 500px;
+}
+
+.main1-title {
+	position: absolute;
+	color: rgba(255, 255, 255);
+	font-family: 'Playfair Display', serif;
+	left: 50%;
+	top: 15%;
+	font-size: 35px;
+	transform: translate(-50%, -50%);
+}
+
+.main1-text {
+	width: 80%;
+	text-align: justify;
+	position: absolute;
+	color: rgba(255, 255, 255);
+	font-family: 'Quicksand';
+	left: 50%;
+	top: 60%;
+	font-size: 20px;
+	transform: translate(-50%, -50%);
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+#tim-title {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 50px;
+	width: 100%;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	top: 15%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+.tim-cont {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+	background-color: rgb(12, 12, 12);
+}
+
+#timer {
+	transform: translate(-50%, -50%);
+	left: 50%;	
+	top: 50%;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+#days, #hours, #minutes, #seconds {
+	margin-left: 1vw;
+	margin-right: 1vw;
+	display: inline-block;
+	padding: 20px;
+	color: white;
+	font-family: 'Bebas Neue', cursive;
+}
+
+#days {
+	background-color: rgb(4, 33, 43);
+	font-size: 60px;
+}
+
+#hours {
+	background-color: rgb(11, 47, 59);
+	font-size: 60px;
+}
+
+#minutes {
+	background-color: rgb(27, 51, 59);
+	font-size: 60px;
+}
+
+#seconds {
+	background-color: rgb(41, 58, 63);
+	font-size: 60px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+
+.footer {
+	margin-top: 2vw;
+	width: 100%;
+	height: 60px;
+	position: relative;
+	background-color: rgb(12, 12, 12);
+}
+
+.f-cont a{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Bebas Neue', cursive;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	opacity: 0.6;
+	transition: 0.5s;
+}
+
+.f-cont a:hover {
+	opacity: 1;
+	border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 1100px) {
+	.hvrbox {
+		display: none;
+	}
+}
