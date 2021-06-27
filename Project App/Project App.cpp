@@ -9,7 +9,7 @@ using namespace std;
 
 int main()
 {
-    User user("Zachary", "The Destroyed", "destroyed@gmail.com", "assblaster", false);
+    User user("Zachary", "this guy", "zachary@gmail.com", "password", false,true,true);
     Menus menu;
     user.saveUser();
     menu.printMainMenu();
