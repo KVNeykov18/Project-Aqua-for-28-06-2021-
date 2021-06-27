@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* Title style */
+
 #title {
     position: absolute;
     font-family: 'DM Serif Display', serif;
@@ -14,6 +16,8 @@
     line-height: normal;
     vertical-align: middle;
 }
+
+/* Top header style */
 
 .nav-back {
     position: relative;
@@ -48,6 +52,8 @@ nav {
     text-align: center;
 }
 
+/* Button for navbar style */
+
 .dropdown {
     overflow: hidden;
     float: right;
@@ -79,6 +85,8 @@ nav {
 .drop-button:hover, .drop-button:focus {
     background-color: #000000cd;
 }
+
+/* Navigation menu style */
 
 .sidenav {
     height: 100%;
@@ -125,5 +133,33 @@ nav {
 
 .sidenav .closebtn:hover {
     opacity: 1;
+}
+
+/* Footer style */
+
+.footer {
+	margin-top: 2vw;
+	width: 100%;
+	height: 60px;
+	position: relative;
+	background-color: rgb(12, 12, 12);
+}
+
+.f-cont {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Bebas Neue', cursive;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	opacity: 0.6;
+	transition: 0.5s;
+}
+
+.f-cont:hover {
+	opacity: 1;
+	border-bottom: 1px solid rgb(255, 255, 255);
 }
 

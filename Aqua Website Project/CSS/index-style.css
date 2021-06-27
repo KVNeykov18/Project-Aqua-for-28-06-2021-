@@ -9,6 +9,8 @@ body {
 	background-repeat: no-repeat;
 }
 
+/* Title style */
+
 #navbackgrnd {
 	background-image: url("../images/image-6.jpg");
 	background-repeat: no-repeat;
@@ -37,6 +39,9 @@ body {
 	box-shadow: 2px 2px rgb(255, 255, 255);
 	padding: 40px;
 }
+
+/* Textboxes with images style */
+
 .textboxes {
 	padding-top: 8vw;
 	width: 100%;
@@ -101,8 +106,6 @@ a {
 	z-index: 2;
 }
 
-
-
 .hvrbox .hvrbox-text {
 	font-size: 18px;
 	display: inline-block;
@@ -116,6 +119,8 @@ a {
 	width: 90%;
 
 }
+
+/* Main text style */
 
 .gen-inf {
 	margin-top: 2vw;
@@ -158,6 +163,8 @@ a {
 	transform: translate(-50%, -50%);
 	text-align: justify;
 }
+
+/* Timer and text style */
 
 .tim-cont {
 	position: relative;
@@ -235,6 +242,9 @@ a {
 	left: 0;
 }
 
+/* Footer */
+
+
 .footer {
 	margin-top: 2vw;
 	width: 100%;
@@ -243,7 +253,8 @@ a {
 	background-color: rgb(12, 12, 12);
 }
 
-.f-cont a{
+.f-cont {
+	cursor: pointer;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -255,57 +266,10 @@ a {
 	transition: 0.5s;
 }
 
-.f-cont a:hover {
+.f-cont:hover {
 	opacity: 1;
 	border-bottom: 1px solid rgb(255, 255, 255);
 }
-
-
-/* .main-text {
-	position: relative;
-	margin-top: 450px;
-}
-
-.mtcont-1{
-	position: absolute;
-	left: 0;
-	height: 400px;
-	width: 50%;
-	overflow: hidden;
-}
-
-.mtcont-1 img{
-	width: 100%;
-	height: auto;
-}
-
-.mtcont-2 {
-	background-color: rgb(31, 31, 31);
-	position: absolute;
-	right: 0;
-	width: 50%;
-	height: 400px;
-	border: 1px solid rgb(255, 255, 255);
-	font-family: 'Quicksand';
-}
-
-.mtcont-2-title {
-	text-align: center;
-	font-family: 'Playfair Display', serif;
-	color:rgb(255, 255, 255);
-	top: 15%;
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.mtcont-2-text {
-	color:rgb(255, 255, 255);
-	top: 50%;
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%, -50%);
-} */
 
 @media only screen and (max-width: 1100px) {
 	.hvrbox {

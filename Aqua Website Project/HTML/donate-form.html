@@ -15,6 +15,8 @@
 
 <body>
 
+    <!-- ------------------------------Create navigation bar----------------------------------- -->
+
     <div id="navbackgrnd">
     </div>
 
@@ -39,8 +41,9 @@
         <a href="sea-pollution.html">Sea pollution</a>
         <a href="endangered-animals.html">Endangered animals</a>
         <a href="global-warming.html">Global warming</a>
-        <a href="#">Our team</a>
     </div>
+
+    <!-- ------------------------------Create title----------------------------------- -->
 
     <div class="gen-inf">
         <div class="gen-back">
@@ -50,49 +53,72 @@
         </div>
     </div>
 
+    <!-- ------------------------------Create a form----------------------------------- -->
+
     <div class="form">
         <div class="form-cont">
-            <div class="form-chos">
-                <input type="radio" id="chos1" name="chos" value="Monthly">
-                <label for="chos1">Monthly</label>
-                <input type="radio" id="chos2" name="chos" value="One-Time">
-                <label for="chos2">One-Time</label>
-            </div>
-            <div class="form-names">
-                <input type="email" id="email" name="email">
-                <label for="email"></label>
-                <input type="text" id="name1" name="fname">
-                <label for="name1"></label>
-                <input type="text" id="name2" name="lname">
-                <label for="name2"></label>
-            </div>
-            <div class="form-card-names">
-                <input type="text" id="cname1" name="cfname">
-                <label for="cname1"></label>
-                <input type="text" id="cname2" name="clname">
-                <label for="cname2"></label>
-            </div>
-            <div class="form-card">
-                <input type="text" id="card" name="card-code">
-                <label for="card"></label>
-            </div>
-            <div class="form-pers">
-                <input type="text" id="country" name="country">
-                <label for="country"></label>
-                <input type="text" id="city" name="city">
-                <label for="city"></label>
-            </div>
-            <div class="btn">
-                <input type="button" id="btn" value="Submit">
+            <form id="form1">
+                <div class="form-chos">
+                    <p id=from-title>Select kind of donate</p>
+                    <input type="radio" id="chos1" name="chos" value="Monthly" required>
+                    <label for="chos1">Monthly</label>
+                    <input type="radio" id="chos2" name="chos" value="One-Time" required>
+                    <label for="chos2">One-Time</label>
+                </div>
+                <div class="form-names">
+                    <p id=from-title>Email</p>
+                    <input type="email" id="email" name="email" placeholder="Enter Email" required>
+                    <label for="email"></label>
+                    <p id=from-title>First Name</p>
+                    <input type="text" id="name1" name="fname" placeholder="Enter First Name" required>
+                    <label for="name1"></label>
+                    <p id=from-title>Last Name</p>
+                    <input type="text" id="name2" name="lname" placeholder="Enter Last Name" required>
+                    <label for="name2"></label>
+                </div>
+                <div class="form-card-names">
+                    <p id=from-title>Card First Name</p>
+                    <input type="text" id="cname1" name="cfname" placeholder="Enter Card First Name" required>
+                    <label for="cname1"></label>
+                    <p id=from-title>Card Laste Name</p>
+                    <input type="text" id="cname2" name="clname" placeholder="Enter Card Laste Name" required>
+                    <label for="cname2"></label>
+                </div>
+                <div class="form-card">
+                    <p id=from-title>Card code</p>
+                    <input type="text" id="card" name="card-code" placeholder="1111-2222-3333-444" required
+                        pattern="[0-9]{12,16}">
+                    <label for="card"></label>
+                </div>
+                <div class="form-pers">
+                    <p id=from-title>Country</p>
+                    <input type="text" id="country" name="country" placeholder="Enter country" required>
+                    <label for="country"></label>
+                    <p id=from-title>City</p>
+                    <input type="text" id="city" name="city" placeholder="Enter City" required>
+                    <label for="city"></label>
+                </div>
+                <div class="form-sum">
+                    <p id=from-title>Sum</p>
+                    <input type="number" id="sum" name="sum" placeholder="$5" required min="1">
+                </div>
+            </form>
+
+            <div class="btn-class">
+                <button type="submit" form="form1" value="Submit" id="btn">Donate</button>
             </div>
         </div>
     </div>
 
+    <!-- ------------------------------Footer------------------------------------->
+
     <div class="footer">
         <div class="f-cont">
-            <a href="google.com">Created by Red Pandas Team</a>
+            Created by Red Pandas Team
         </div>
     </div>
+
+        <!-- ------------------------------Link to javascript code------------------------------------->
 
     <script src="../JavaScript/js-main.js" type="text/javascript"></script>
 
