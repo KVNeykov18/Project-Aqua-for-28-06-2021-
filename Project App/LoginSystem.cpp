@@ -1,6 +1,7 @@
 #include "LoginSystem.h"
 
 
+
 User::User()
 {
 	this->username = "bobthebomb";
@@ -133,6 +134,12 @@ bool User::saveUser()
 		std::cout << "\nAn error occured\nReturning to main menu..."; Sleep(1000); menu.printMainMenu();
 		return false;
 	}
+}
+
+bool User::saveUser(User u)
+{
+	u.saveUser();
+	return true;
 }
 
 bool User::loadUser(std::string username)

@@ -1,5 +1,6 @@
 #include "Menus.h"
 
+std::vector<User> arr;
 
 Menus::Menus()
 {
@@ -19,6 +20,13 @@ void Menus::printMainMenu()
 		printUserManagementOptions();
 		break;
 	case '0':
+		for (size_t i = 0; i < arr.size(); i++)
+		{
+			if (!arr[i].isTempUser())
+			{
+				arr[i].saveUser();
+			}
+		}
 		break;
 	default:
 		system("CLS");
@@ -52,20 +60,14 @@ void Menus::printUserManagementOptions()
 		tempUser.setModeratorPerms(tempB);
 		std::cout << "Is the user an admin? (1/0): "; std::cin >> tempB;
 		tempUser.setAdminPerms(tempB);
-		if (tempUser.isTempUser())
-		{
-			
-		}
-		else
-		{
-			tempUser.saveUser();
-		}
+		arr.push_back(tempUser);
 		break;
 	case '2':
 		break;
 	case '3':
 		break;
 	case '4':
+
 		break;
 	case '0':
 		break;

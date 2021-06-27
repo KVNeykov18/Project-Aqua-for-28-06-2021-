@@ -51,6 +51,7 @@ public:
 
 	//Save user to file
 	bool saveUser();
+	static bool saveUser(User u);
 	//Load user from file
 	bool loadUser(std::string username);
 private:
