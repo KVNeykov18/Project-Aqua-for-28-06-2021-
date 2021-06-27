@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#title {
+    position: absolute;
+    font-family: 'DM Serif Display', serif;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+.nav-back {
+    position: relative;
+}
+
+#donate:hover {
+    background-color: rgba(0, 0, 0, 0.802)
+}
+
+#donate {
+    top: 15px;
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 10px;
+    right: 12%;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    font-family: 'DM Serif Display', serif;
+    transition: 0.5s;
+}
+
+#nav-icon {
+    width: 70px;
+    cursor: pointer;
+    margin: -10px;
+}
+
+nav {
+    background-color: #0a0a0aee;
+    overflow: auto;
+    text-align: center;
+}
+
+.dropdown {
+    overflow: hidden;
+    float: right;
+}
+
+.dropdown a {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown .drop-button {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    margin: 0;
+}
+
+.drop-button {
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.5s;
+}
+
+.drop-button:hover, .drop-button:focus {
+    background-color: #000000cd;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    background-color: #0a0a0a;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 15px 15px 15px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Bebas Neue', cursive;
+    color: #ffffff;
+    display: block;
+    transition: 0.5s;
+}
+
+.sidenav a:hover {
+    background-color: #000000;
+}
+
+.sidenav .closebtn {
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-style: none;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.sidenav .closebtn:hover {
+    opacity: 1;
+}
+

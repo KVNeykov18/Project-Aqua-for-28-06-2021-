@@ -2,9 +2,11 @@ body {
     background-color: rgb(31, 31, 31);
 }
 
-#navbackgrnd{
-    background-image: url("../images/image-6.jpg");    
+#navbackgrnd {
+    background-image: url("../images/image-6.jpg");
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     background-size: 120%;
     width: 100%;
     padding-bottom: 600px;
@@ -23,7 +25,7 @@ body {
     font-size: 20px;
 }
 
-#tit1{
+#tit1 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: rgb(255, 255, 255);
@@ -39,6 +41,5 @@ body {
 }
 
 #act-tab:hover {
-    background-size: 1700%;
-    font-size: 23px;
+    background-size: 1100%;
 }

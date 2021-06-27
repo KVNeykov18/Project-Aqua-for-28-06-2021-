@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS/main-style.css">
+    <link rel="stylesheet" href="CSS/index-style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Oswald:wght@200;300&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="navbackgrnd">
+    </div>
+
+    <nav>
+        <div class="nav-back">
+            <div id="title">AQUA</div>
+            <a href="HTML/donate-form.html">
+                <div id="donate">
+                    Donate
+                </div>
+            </a>
+
+            <div class="dropdown">
+                <button class="drop-button" onclick="openNav()">
+
+                    <img src="images/icon.png" id="nav-icon">
+
+                </button>
+            </div>
+        </div>
+
+    </nav>
+
+    <div id="mySidenav" class="sidenav">
+        <button class="closebtn" onclick="closeNav()">&times;</button>
+        <a href="index.html" id="act-tab">Home</a>
+        <a href="HTML/sea-pollution.html">Sea pollution</a>
+        <a href="HTML/endangered-animals.html">Endangered animals</a>
+        <a href="HTML/global-warming.html">Global warming</a>
+    </div>
+
+    <header>
+        <p id="tit1">Welcome to Aqua - a website about the oceans' problems</p>
+    </header>
+
+    <div class="textboxes">
+        <a href="https://en.wikipedia.org/wiki/Galapagos_Penguin">
+            <div class="hvrbox">
+
+                <img src="images/image-15.jpg" class="hvrbox-layer_bottom">
+
+                <div class="hvrbox-layer_top">
+                    <div class="hvrbox-text">This tropical Penguin is endemic to the Galápagos Islands, and is the only
+                        penguin species which lives so far north. They have adapted to survive in warmer climes, and
+                        spend the majority of their time in the water.</div>
+                </div>
+
+            </div>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/North_Atlantic_right_whale">
+            <div class="hvrbox">
+
+                <img src="images/image-19.jpg" class="hvrbox-layer_bottom">
+
+                <div class="hvrbox-layer_top">
+                    <div class="hvrbox-text">There are only around 400 North Atlantic Right Whales left in our oceans.
+                        Due to a great deal of oily blubber they carry, these whales were targeted heavily by hunters
+                        and almost reached extinction in the early 20th Century until a ban was put in place in 1937.
+                    </div>
+                </div>
+
+            </div>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Sea_Otter">
+            <div class="hvrbox">
+
+                <img src="images/image-13.jpg" class="hvrbox-layer_bottom">
+
+                <div class="hvrbox-layer_top">
+                    <div class="hvrbox-text">The Sea Otter is one of the smallest endangered ocean species. If you’re
+                        hoping to spot one of these cuties in the wild, they are most commonly found in California. Sea
+                        Otters play a vital role in our ecosystem by feeding on sea urchins which help keep kelp forests
+                        thriving.</div>
+                </div>
+
+            </div>
+        </a>
+    </div>
+
+    <!-- <div class="main-text">
+
+        <div class="mtcont-1">
+            <img src="images/image-6.jpg">
+        </div>
+
+        <div class="mtcont-2">
+            <div class="mtcont-2-title">
+                <h2>Title</h2>
+            </div>
+            <div class="mtcont-2-text">
+                <p>Some text, some text</p>
+            </div>           
+        </div>
+
+    </div> -->
+
+    <div class="gen-inf">
+        <div class="gen-back">
+            <div class="gen-title">
+                Ocean Threats
+            </div>
+            <div class="gen-text">
+                <p>Human activities are threatening the health of the world's oceans. More than 80 percent of marine
+                    pollution comes from land-based activities. From coral bleaching to sea level rise, entire marine
+                    ecosystems are rapidly changing.
+
+                    Global warming is causing alterations in ocean chemistry and many oceanic processes, and it is
+                    threatening many species of marine animals that cannot cope with higher temperatures. Overfishing is
+                    a serious problem in many parts of the world. Conservationists advocate creating expansive marine
+                    reserves to protect the biodiversity of the oceans.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="tim-cont">
+        <div id="timer">
+            <div id="days"></div>
+            <div id="hours"></div>
+            <div id="minutes"></div>
+            <div id="seconds"></div>
+        </div>
+        <div id="tim-text">
+            <div id="tim-title">
+                Only 20 Years Before There’s No Turning Back
+            </div>
+            <p>The Intergovernmental Panel on Climate Change (IPCC) issued a chilling report that has sent most people
+                (with the notable exception of the current president of the United States) into a deep funk. In it, some
+                90 climate scientists from 40 countries conclude that if humans don’t take immediate, collective action
+                to limit global warming to 1.5 degrees Celsius by 2040, the consequences will effectively be baked into
+                the natural systems of the planet. With so much heat-trapping carbon in the atmosphere, there will be,
+                in effect, no turning back.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="f-cont">
+            <a href="google.com">Created by Red Pandas Team</a>
+        </div>
+    </div>
+
+    <script src="JavaScript/js-main.js" type="text/javascript"></script>
+
+</body>
+
+</html>
