@@ -1,23 +1,55 @@
 #include "Menus.h"
 
 std::vector<User> arr;
+User currentUser("", "", "", "", 1);
 
 Menus::Menus()
 {
-	mainMenu = "  MAIN MENU\n=============\n1. Show monitoring options\n2. Show user management options\n0. Exit app";
+	mainMenu = "  MAIN MENU\n=============\n1. Show monitoring options\n2. Show user management options\n3. Login\n0. Exit app";
 	userManagementMenu = "  User Management\n===================\n1. Create a new user\n2. Edit an existing user\n3. Save an existing user\n4. Load a user\n0. Back to main menu";
 }
 
 void Menus::printMainMenu()
 {
 	system("CLS");
+	if (currentUser.getUsername() == "")
+	{
+		std::cout << "Not Logged In"<< "\n\n";
+	}
+	else
+	{
+		std::cout << "Current User: " + currentUser.getDisplayName()<<"\n\n";
+	}
+	std::string temp;
+	User tempUser;
 	std::cout << mainMenu;
 	switch (_getch())
 	{
-	case'1':
+	case '1':
 		break;
 	case '2':
 		printUserManagementOptions();
+		break;
+	case '3':
+		system("CLS");
+		std::cout << "Enter username: "; std::cin >> temp;
+		if (tempUser.loadUser(temp))
+		{
+			std::cout << "Enter password: ";
+			std::cin >> temp;
+			while (!(tempUser.getPassword() == temp))
+			{
+				system("CLS");
+				std::cout << "Incorrect password";
+				Sleep(1000);
+				std::cout << "Enter password: "; std::cin >> temp;
+			} 
+			currentUser = tempUser;
+		}
+		else
+		{
+			std::cout << "User not found";
+		}
 		break;
 	case '0':
 		for (size_t i = 0; i < arr.size(); i++)

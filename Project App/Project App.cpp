@@ -11,5 +11,6 @@ int main()
 {
     User user("Zachary", "The Destroyed", "destroyed@gmail.com", "assblaster", false);
     Menus menu;
+    user.saveUser();
     menu.printMainMenu();
 }
