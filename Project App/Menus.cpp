@@ -33,23 +33,22 @@ void Menus::printMainMenu()
 	case '3':
 		system("CLS");
 		std::cout << "Enter username: "; std::cin >> temp;
-		if (tempUser.loadUser(temp))
-		{
-			std::cout << "Enter password: ";
-			std::cin >> temp;
-			while (!(tempUser.getPassword() == temp))
-			{
-				system("CLS");
-				std::cout << "Incorrect password";
-				Sleep(1000);
-				std::cout << "Enter password: "; std::cin >> temp;
-			} 
-			currentUser = tempUser;
-		}
-		else
+		while (!(tempUser.loadUser(temp)))
 		{
 			std::cout << "User not found";
+			Sleep(1000);
+			std::cout << "Enter username: "; std::cin >> temp;
 		}
+		std::cout << "Enter password: ";
+		std::cin >> temp;
+		while (!(tempUser.getPassword() == temp))
+		{
+			system("CLS");
+			std::cout << "Incorrect password";
+			Sleep(1000);
+			std::cout << "Enter password: "; std::cin >> temp;
+		}
+		currentUser = tempUser;
 		break;
 	case '0':
 		for (size_t i = 0; i < arr.size(); i++)
