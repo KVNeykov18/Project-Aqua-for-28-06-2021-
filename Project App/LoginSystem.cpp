@@ -128,7 +128,7 @@ bool User::saveUser()
 			file << isTempUser() << "\n";
 			file << isAdmin() << "\n";
 			file << isModerator() << "\n";
-			file.close();
+			file.close(); return true;
 		}
 		std::cout << "\nAn error occured\nReturning to main menu..."; Sleep(1000); menu.printMainMenu();
 		return false;
