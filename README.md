@@ -2,7 +2,7 @@
 
 ## Greetings, we are The Red Pandas!
 
-We are a group of individuals with a goal to make learning for children with disabilities easier! We did that by making an app that helps them learn. Check out our presentation below.
+We are a group of individuals with a goal to spread awareness about the ocean and the current pollution inhabiting it. Check out our presentation below.
 [PRESENTATION]
 https://cdn.discordapp.com/attachments/768538199957569569/858932359977762817/The_red_pandas.pptx
 ---
