@@ -3,14 +3,15 @@
 ## Greetings, we are The Red Pandas!
 
 We are a group of individuals with a goal to spread awareness about the ocean and the current pollution inhabiting it. Check out our presentation below.
-[PRESENTATION]
-https://cdn.discordapp.com/attachments/768538199957569569/858932359977762817/The_red_pandas.pptx
+
 ---
  
 
 ## <img src="https://cdn.discordapp.com/attachments/856937460567113728/856950114278309908/unknown-removebg-preview_1.png" width="150">  Download 
 
 Download the app from [github](https://github.com/KVNeykov18/Project-Aqua-for-28-06-2021-) by pressing the green clone button. 
+[PRESENTATION]
+https://cdn.discordapp.com/attachments/768538199957569569/858932359977762817/The_red_pandas.pptx
 
 ---
 
