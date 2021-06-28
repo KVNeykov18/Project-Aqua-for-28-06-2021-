@@ -3,12 +3,6 @@
 std::vector<User> arr;
 User currentUser("", "", "", "", 1);
 
-Menus::Menus()
-{
-	mainMenu = "  MAIN MENU\n=============\n1. Show monitoring options\n2. Show user management options\n3. Login\n0. Exit app";
-	userManagementMenu = "  User Management\n===================\n1. Create a new user\n2. Edit an existing user\n3. Save an existing user\n4. Load a user\n0. Back to main menu";
-}
-
 void Menus::printMainMenu()
 {
 	system("CLS");
@@ -27,6 +21,9 @@ void Menus::printMainMenu()
 	switch (_getch())
 	{
 	case '1':
+		system("CLS");
+		std::cout << "Work in progress.\nReturning to previous menu..."; Sleep(1000);
+		system("CLS"); printUserManagementOptions();
 		break;
 	case '2':
 		printUserManagementOptions();
@@ -200,7 +197,7 @@ void Menus::printUserManagementOptions()
 		{
 			std::cout << arr[i].getUsername()<<std::endl;
 		}
-		std::cout << "Enter username of user you wish to save";
+		std::cout << "Enter username of user you wish to save: ";
 		std::cin >> temp;
 		do
 		{
@@ -215,14 +212,17 @@ void Menus::printUserManagementOptions()
 
 		} while (!tempB);
 		
-
+		printUserManagementOptions();
 		break;
 	case '4':
+		system("CLS");
+		std::cout << "Work in progress.\n0Returning to previous menu..."; Sleep(1000);
+		system("CLS"); printUserManagementOptions();
 		break;
 	case '0':
 		printMainMenu();
 		break;
-
+		
 	default:
 		system("CLS");
 		std::cout << "Please enter a valid option"; Sleep(1000); printUserManagementOptions();
